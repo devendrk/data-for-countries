@@ -1,10 +1,6 @@
 import React from 'react'
 
 export default function WeatherDetails({ countryCapital, temperature, wind }) {
-  console.log('temp', temperature)
-  console.log('wind', wind)
-  console.log('cap', countryCapital)
-
   return (
     <table class="table table-sm">
       <thead>
