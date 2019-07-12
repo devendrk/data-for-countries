@@ -73,12 +73,12 @@ const App = () => {
       return (
         <div className="container mt-5 ">
           <div className="row d-flex flex-wrap justify-content-around ">
-            <div className="md-col-6">
+            <div className="md-col-6 mb-5">
               < CountryDetails
                 filterWhenSearch={filterWhenSearch}
               />
             </div>
-            <div className="md-col-4">
+            <div className="md-col-4 mb-5">
               < WeatherDetails
                 countryCapital={countryCapital}
                 temperature={temperature}
@@ -108,7 +108,7 @@ const App = () => {
         color: 'blue'
       }
       return (
-        <h4 className="text-center" style={styleDiv}>Too many matches, try more letter</h4>
+        <p className="text-center" style={styleDiv}><small>Too many matches, try more letter</small></p>
       )
     }
   }
