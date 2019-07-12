@@ -89,9 +89,6 @@ const App = () => {
           </div>
 
         </div>
-        // ---
-
-        // ---
 
       )
     } else if (filterWhenSearch.length > 1 && filterWhenSearch.length < 10) {
