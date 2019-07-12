@@ -1,17 +1,35 @@
 import React from 'react'
 
-export default function WeatherDetails({ filterCountries, weather }) {
-  // console.log('weather', weather)
-  let capitalCity = filterCountries[0].capital;
-  // console.log('gw', getWeather(capitalCity))
-  // console.log('bla bal', weather)
-  // getWeather(filterCountries.country.capital)
+export default function WeatherDetails({ countryCapital, temperature, wind }) {
+  console.log('temp', temperature)
+  console.log('wind', wind)
+  console.log('cap', countryCapital)
 
   return (
-    <div>
-      <h3>Weather in {capitalCity} </h3>
-      <h5>Temperature: {weather.temp}</h5>
-      <h4>Wind .... </h4>
-    </div>
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th className="bg-info text-white" scope="col">Weather in {countryCapital}</th>
+          <th className="bg-info text-white" scope="col"></th>
+
+        </tr>
+      </thead>
+      <tbody >
+        <tr className="p-5">
+          <th scope="row">Temperature</th>
+          <td>{temperature}</td>
+
+
+        </tr>
+        <tr>
+          <th scope="row">Wind</th>
+          <td>{wind}</td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+
   )
 }
