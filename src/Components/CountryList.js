@@ -1,15 +1,26 @@
 import React from 'react';
 
 const CountryList = ({ tenCountries, handleShowCountryInfo }) => {
-  return tenCountries.map(country => {
+  const renderCuntryList = tenCountries.map(country => {
     return (
-      <p key={country.name} >{country.name}
-        <span>
-          <button onClick={() => handleShowCountryInfo(country.name)}>show</button>
-        </span>
-      </p>
+      <div className="row">
+        <div className="col-8">
+          <li key={country.name} className="font-wight-bold">{country.name}
+            <span className="ml-5">
+              <button className="btn btn-info" onClick={() => handleShowCountryInfo(country.name)}>show details</button>
+            </span>
+          </li>
+          <hr />
+        </div>
+      </div>
     )
   })
+
+  return (
+    <div className="container">
+      {renderCuntryList}
+    </div>
+  )
 
 }
 
