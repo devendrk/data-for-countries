@@ -1,4 +1,4 @@
-# Source code can be found in source branch
+
 ## FullStack open 2019 part-2
 
 ### exercise Name: [Data-for-countries](https://devendrk.github.io/data-for-countries/)
